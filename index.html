@@ -115,9 +115,7 @@
 
                         <!-- 슬라이더 -->
                         <div class="slider_wrap">
-                            <button class="arrow prev">
-                                <img src="assets/arrow-prev.svg" alt="이전">
-                            </button>
+                            <button class="arrow prev"></button>
                             <div class="menu_slider">
                                 <ul class="menu_list">
 
@@ -366,9 +364,7 @@
                                     <!-- 메뉴 카드 끝-->
                                 </ul>
                             </div>
-                            <button class="arrow next">
-                                <img src="assets/arrow-next.svg" alt="다음">
-                            </button>
+                            <button class="arrow next"></button>
                         </div>
                         <!-- 슬라이더 끝 -->
                 </section>
@@ -470,9 +466,6 @@
             });
         }
 
-
-
-
         //탭 클릭
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
@@ -484,7 +477,7 @@
             });
         });
 
-        //화살표
+        //화살표 클릭
         nextBtn.addEventListener('click', () => {
             if (currentPage >= cardMax) return;
 

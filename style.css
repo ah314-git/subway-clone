@@ -1,0 +1,298 @@
+.header_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background-color: #fff;
+    border-top: 5px solid green;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-top: 24px;
+}
+
+.nav {
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.nav_wrap,
+.subnav_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_wrap {
+    height: 70px;
+}
+
+.subnav_wrap {
+    height: 250px;
+    overflow: hidden;
+}
+
+.nav_list,
+.subnav_list {
+    display: flex;
+}
+
+.nav_list li,
+.subnav_list li {
+    width: 166px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.nav_list li a:hover {
+    color: green;
+}
+
+.subnav_list li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+}
+
+.subnav_list li a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.hero_wrap {
+    max-width: 1920px;
+    height: 440px;
+    margin: 0 auto;
+    background: rgb(210, 230, 212);
+}
+
+.menu_wrap {
+    position: relative;
+    width: 1170px;
+    margin: 150px auto;
+}
+
+.menu_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu_top h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    color: #222;
+}
+
+.menu_top h2::after {
+    content: "";
+    position: absolute;
+    right: 275px;
+    top: -10px;
+    width: 56px;
+    height: 56px;
+    background: url("./assets/drop.svg") no-repeat center / contain;
+    z-index: -10;
+}
+
+.menu_tabs {
+    display: flex;
+    gap: 24px;
+}
+
+.menu_tabs li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.menu_tabs li.active {
+    color: green;
+    font-weight: 600;
+}
+
+.menu_tabs li::after {
+    content: '|';
+    position: absolute;
+    right: -12px;
+    color: #ccc;
+}
+
+.menu_tabs li:last-child::after {
+    content: '';
+}
+
+
+
+
+.slider_wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu_slider {
+    position: relative;
+    width: calc((270px * 4) + (30px * 3));
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.menu_list {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.55s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in-active {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 10;
+}
+
+.arrow img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.arrow.prev {
+    left: -120px;
+}
+
+.arrow.next {
+    right: -120px;
+}
+
+.menu_card {
+    width: 270px;
+    height: 320px;
+    flex-shrink: 0;
+}
+
+.menu_card:hover .menu_img {
+    transform: scale(1.2);
+}
+
+.menu_card:hover .menu_text strong {
+    transform: scale(1.2);
+    margin: 24px 0;
+}
+
+.menu_card:hover .menu_text p {
+    opacity: 0;
+}
+
+.menu_card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.menu_img {
+    position: relative;
+    height: 180px;
+    background-color: #eee;
+}
+
+.zoom_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: url("./assets/zoom.svg") no-repeat center / contain;
+    opacity: 0;
+}
+
+.menu_card:hover .zoom_icon {
+    opacity: 1;
+}
+
+.menu_text {
+    padding: 24px 16px;
+    text-align: center;
+}
+
+.menu_text strong {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 8px 0;
+}
+
+.menu_text p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+    line-height: 1.5;
+}
+
+

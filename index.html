@@ -6,47 +6,507 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>subway-clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
+    <div class="wrap">
 
-    <!-- 헤더 -->
-    <header>
-        <div class="logo">SUBWAY</div>
-    </header>
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="header_wrap">
+                <h1 class="logo">
+                    <a href="/"><img src="assets/subway_logo.svg" alt="subway"></a>
+                </h1>
+            </div>
+        </header>
 
-    <!-- 내비게이션 -->
-    <nav>
-        <a href="#">메뉴소개</a>
-        <a href="#">이용방법</a>
-        <a href="#">새소식</a>
-        <a href="#">써브웨이</a>
-        <a href="#">가맹점</a>
-        <a href="#">온라인 주문</a>
-    </nav>
+        <!-- 내비게이션 -->
+        <nav class="nav">
+            <div class="nav_wrap">
+                <ul class="nav_list">
+                    <li><a href="#">메뉴소개</a></li>
+                    <li><a href="#">이용방법</a></li>
+                    <li><a href="#">새소식</a></li>
+                    <li><a href="#">써브웨이</a></li>
+                    <li><a href="#">가맹점</a></li>
+                    <li><a href="#">온라인 주문</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 서브 내비게이션 -->
+        <nav class="subnav">
+            <div class="subnav_wrap">
+                <ul class="subnav_list">
+                    <li>
+                        <ul>
+                            <li><a href="#">샌드위치</a></li>
+                            <li><a href="#">랩·기타</a></li>
+                            <li><a href="#">샐러드</a></li>
+                            <li><a href="#">아침메뉴</a></li>
+                            <li><a href="#">스마일 썹</a></li>
+                            <li><a href="#">단체메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">써브웨이 이용방법</a></li>
+                            <li><a href="#">단체메뉴 이용방법</a></li>
+                            <li><a href="#">신선한 재료 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">이벤트·프로모션</a></li>
+                            <li><a href="#">뉴스·공지사항</a></li>
+                            <li><a href="#">광고영상</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">써브웨이 역사</a></li>
+                            <li><a href="#">써브웨이 약속</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">써브웨이 프랜차이즈</a></li>
+                            <li><a href="#">가맹관련 FAQ</a></li>
+                            <li><a href="#">가맹신청·문의</a></li>
+                            <li><a href="#">지사안내</a></li>
+                            <li><a href="#">사업설명회</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">APP 주문</a></li>
+                            <li><a href="#">단체주문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <main>
 
-        <!-- 배너 -->
-        <section class="hero">배너</section>
+        <main class="main">
+            <div class="main_wrap">
 
-        <!-- 메뉴 -->
-        <section id="menu">메뉴</section>
+                <!-- 배너 -->
+                <section class="hero_section">
+                    <div class="hero_wrap">
+                        <h2>배너</h2>
+                    </div>
+                </section>
 
-        <!-- 공지사항 -->
-        <section id="notice">공지사항</section>
+                <!-- 메뉴 -->
+                <section class="menu_section">
+                    <div class="menu_wrap">
+                        <div class="menu_top">
+                            <h2>Subway’s Menu</h2>
+                            <ul class="menu_tabs">
+                                <li class="active" data-category="classic">클래식</li>
+                                <li data-category="fresh">프레쉬&라이트</li>
+                                <li data-category="premium">프리미엄</li>
+                                <li data-category="morning">아침메뉴</li>
+                            </ul>
+                        </div>
 
-    </main>
 
-    <!-- 푸터 -->
-    <footer>
-        <div>© 2025 Subway Clone</div>
-    </footer>
+                        <!-- 슬라이더 -->
+                        <div class="slider_wrap">
+                            <button class="arrow prev">
+                                <img src="assets/arrow-prev.svg" alt="이전">
+                            </button>
+                            <div class="menu_slider">
+                                <ul class="menu_list">
+
+                                    <!-- 메뉴 카드 -->
+                                    <li class="menu_card" data-category="classic">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>에그마요</strong>
+                                                <p>
+                                                    부드러운 달걀과 고소한 마요네즈가 만나
+                                                    더 부드러운 스테디셀러
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="classic">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>이탈리안 비엠티</strong>
+                                                <p>
+                                                    페퍼로니, 살라미 그리고 햄이 만들어내는 최상의
+                                                    조화! 전세계가 사랑하는 써브웨이의 베스트셀러!
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="classic">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>비엘티</strong>
+                                                <p>
+                                                    오리지널 아메리칸 스타일 베이컨의
+                                                    풍미와 바삭함 그대로
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="classic">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>햄</strong>
+                                                <p>
+                                                    기본 중에 기본!
+                                                    풍부한 햄이 만들어내는
+                                                    입 안 가득 넘치는 맛의 향연
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="classic">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>참치</strong>
+                                                <p>
+                                                    남녀노소 누구나 좋아하는
+                                                    단백한 참치와 고소한 마요네즈의
+                                                    완벽한 조화
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="fresh">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>로티세리 바비큐 치킨</strong>
+                                                <p>
+                                                    촉촉한 바비큐 치킨의 풍미가득
+                                                    손으로 찢어 더욱 부드러운 치킨의 혁명
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="fresh">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>로스트 치킨</strong>
+                                                <p>
+                                                    오븐에 구워 담백한 저칼로리
+                                                    닭가슴살의 건강한 풍미
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="fresh">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>써브웨이 클럽</strong>
+                                                <p>
+                                                    명실공허 시그니처 써브!
+                                                    치킨 슬라이스, 햄, 베이컨의 완벽한 앙상블
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="fresh">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>베지</strong>
+                                                <p>
+                                                    갓 구운 빵과 신선한 7가지 야채로
+                                                    즐기는 깔끔한 한끼
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="premium">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>쉬림프</strong>
+                                                <p>
+                                                    탱글한 식감이 그대로 살아있는 통새우가
+                                                    5마리 들어가 한 입 베어 먹을 때 마다
+                                                    진짜 새우의 풍미가 가득
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="premium">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>풀드 포크 바비큐</strong>
+                                                <p>
+                                                    훈연한 미국 정통 스타일의 리얼 바비큐
+                                                    폴드포크가 들어간 샌드위치
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="premium">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>스테이크&치즈</strong>
+                                                <p>
+                                                    육즙이 쫙~
+                                                    풍부한 비프 스테이크의 풍미가 입안 한가득
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="premium">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>스파이시 이탈리안</strong>
+                                                <p>
+                                                    살라미, 페퍼로니가 입안 한가득!
+                                                    쏘 핫한 이탈리아의 맛
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="premium">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>치킨 데리야끼</strong>
+                                                <p>
+                                                    담백한 치킨 스트립에 달콤짭조름한 써브웨이
+                                                    특제 데리야끼 소스와의 환상적인 만남
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="morning">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>햄, 에그&치즈</strong>
+                                                <p>
+                                                    푹신한 오믈렛과 햄의 가장 클래식한 조화
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="menu_card" data-category="morning">
+                                        <a href="#">
+                                            <div class="menu_img">
+                                                <span class="zoom_icon"></span>
+                                            </div>
+                                            <div class="menu_text">
+                                                <strong>웨스턴, 에그&치즈</strong>
+                                                <p>
+                                                    토마토, 피망, 양파 세가지 야채가 더해져
+                                                    더욱 신선한 하루 시작
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- 메뉴 카드 끝-->
+                                </ul>
+                            </div>
+                            <button class="arrow next">
+                                <img src="assets/arrow-next.svg" alt="다음">
+                            </button>
+                        </div>
+                        <!-- 슬라이더 끝 -->
+                </section>
+
+                <!-- 공지사항 -->
+                <section class="notice">
+                    <div class="notice_wrap">
+                        <h2>공지사항</h2>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="footer">
+            <div class="footer_wrap">
+                <p>© 2025 Subway Clone</p>
+            </div>
+        </footer>
 
 
 
-    <!-- js -->
-    <script src="script.js"></script>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        /* 내비게이션 */
+        $(function () {
+            const $nav = $('.nav');
+            const $subnav = $('.subnav');
+
+            let timer;
+            $nav.add($subnav).on('mouseenter', function () {
+                clearTimeout(timer);
+                $subnav.stop().slideDown(200);
+            });
+
+            $nav.add($subnav).on('mouseleave', function () {
+                timer = setTimeout(() => {
+                    if (!$nav.is(':hover') && !$subnav.is(':hover')) {
+                        $subnav.stop().slideUp(200);
+                    }
+                }, 10);
+            });
+        });
+
+        /* 메뉴 탭 */
+        $('.menu_tabs li').on('click', function () {
+            const category = $(this).data('category');
+
+            $('.menu_tabs li').removeClass('active');
+            $(this).addClass('active');
+
+            $('.menu_card').hide();
+            $('.menu_card[data-category="' + category + '"]').show();
+        });
+
+        /* 메뉴 섹션 */
+        const menuList = document.querySelector('.menu_list');
+        const allCards = document.querySelectorAll('.menu_card');
+        const tabs = document.querySelectorAll('.menu_tabs li');
+        const prevBtn = document.querySelector('.arrow.prev');
+        const nextBtn = document.querySelector('.arrow.next');
+
+        const gap = 30;
+        const count = 4;
+        const cardWidth = allCards[0].offsetWidth + gap;
+        const cardMove = cardWidth * count;
+
+        let currentPage = 0;
+        let visibleCards = [];
+        let cardMax = 0;
+
+        function updateCards(category) {
+            visibleCards = [...allCards].filter(
+                card => card.dataset.category === category
+            );
+
+            allCards.forEach(card => card.style.display = 'none');
+            visibleCards.forEach(card => card.style.display = 'block');
+
+            currentPage = 0;
+            cardMax = Math.ceil(visibleCards.length / count) - 1;
+
+
+            const slideDistance = cardWidth * 4;
+
+            menuList.style.transition = 'none';
+            menuList.style.transform = `translateX(${slideDistance}px)`;
+
+            requestAnimationFrame(() => {
+                menuList.style.transition =
+                    'transform 0.55s ease';
+                menuList.style.transform = 'translateX(0)';
+            });
+        }
+
+
+
+
+        //탭 클릭
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const category = tab.dataset.category;
+                updateCards(category);
+            });
+        });
+
+        //화살표
+        nextBtn.addEventListener('click', () => {
+            if (currentPage >= cardMax) return;
+
+            currentPage++;
+            menuList.style.transform =
+                `translateX(-${cardMove * currentPage}px)`;
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPage <= 0) return;
+
+            currentPage--;
+            menuList.style.transform =
+                `translateX(-${cardMove * currentPage}px)`;
+        });
+
+        updateCards('classic');
+
+
+    </script>
+
+
 </body>
 
 </html>

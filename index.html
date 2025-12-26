@@ -7,6 +7,7 @@
     <title>subway-clone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 
 <body>
@@ -93,11 +94,41 @@
             <div class="main_wrap">
 
                 <!-- 배너 -->
-                <section class="hero_section">
-                    <div class="hero_wrap">
-                        <h2>배너</h2>
+                <section class="banner_section">
+                    <div class="banner_wrap">
+                        <div class="bn_sd"><a href="#"><img src="assets/bn1.jpg" alt=""></a></div>
+                        <div class="bn_sd"><a href="#"><img src="assets/bn2.jpg" alt=""></a></div>
+                        <div class="bn_sd"><a href="#"><img src="assets/bn3.jpg" alt=""></a></div>
+                        <div class="bn_sd"><a href="#"><img src="assets/bn1.jpg" alt=""></a></div>
+                        <div class="bn_sd"><a href="#"><img src="assets/bn2.jpg" alt=""></a></div>
+                        <div class="bn_sd"><a href="#"><img src="assets/bn3.jpg" alt=""></a></div>
                     </div>
                 </section>
+
+
+
+                <!-- 퀵 링크 -->
+                <div class="quick_link_wrap">
+                    <div class="quick_link">
+
+                        <div class="store">
+                            <a href="#">
+                                <div class="ql_img"><img src="assets/store.svg" alt=""></div>
+                                <strong class="ql_desc">매장찾기</strong>
+                            </a>
+                        </div>
+
+                        <div class="franchise">
+                            <a href="#">
+                                <div class="ql_img"><img src="assets/franchise.svg" alt=""></div>
+                                <strong class="ql_desc">가맹신청·문의</strong>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
 
                 <!-- 메뉴 -->
                 <section class="menu_section">
@@ -123,6 +154,7 @@
                                     <li class="menu_card" data-category="classic">
                                         <a href="#">
                                             <div class="menu_img">
+                                                <!--<img src="" alt="">-->
                                                 <span class="zoom_icon"></span>
                                             </div>
                                             <div class="menu_text">
@@ -372,9 +404,97 @@
                 <!-- 공지사항 -->
                 <section class="notice">
                     <div class="notice_wrap">
-                        <h2>공지사항</h2>
+                        <div class="notice_top">
+                            <div class="notice_use">
+                                <p>써브웨이를<br>제대로 즐기는 방법!</p>
+                                <a href="#">이용방법</a>
+                            </div>
+                            <div class="notice_history">
+                                <p>50년 역사를 가진<br>No.1 프랜차이즈의 성장기</p>
+                                <a href="#">써브웨이 역사</a>
+                            </div>
+                        </div>
+
+
+                        <div class="notice_bottom">
+                            <div class="notice_news">
+                                <div class="news_title">
+                                    <h3>What's New</h3>
+                                    <p>
+                                        써브웨이의 다양한 소식을<br>
+                                        빠르게 전달해드립니다.
+                                    </p>
+                                </div>
+
+                                <div class="news_info">
+                                    <ul class="news_list">
+                                        <li class="news_item"><a href="#">써브웨이 공지사항 사항입니다1</a></li>
+                                        <li class="news_item"><a href="#">써브웨이 공지사항 사항입니다2</a></li>
+                                        <li class="news_item"><a href="#">써브웨이 공지사항 사항입니다3</a></li>
+                                        <a href="#" class="news_more">more</a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="notice_ad">
+                                <div class="ad_sd"><a href="#"><img src="" alt=""></a></div>
+                                <div class="ad_sd"><a href="#"><img src="" alt=""></a></div>
+                                <div class="ad_sd"><a href="#"><img src="" alt=""></a></div>
+                                <div class="ad_sd"><a href="#"><img src="" alt=""></a></div>
+                                <div class="ad_sd"><a href="#"><img src="" alt=""></a></div>
+                            </div>
+                        </div>
                     </div>
                 </section>
+
+                <!-- 퀵 메뉴 -->
+                <div class="quick_menu_wrap">
+                    <div class="quick_menu">
+                        <ul class="quick_menu_list">
+
+                            <li class="quick_menu_item">
+                                <a href="#">
+                                    <div class="qm_img"><img src="assets/franchise.svg" alt=""></div>
+                                    <div class="qm_text">
+                                        <strong>프랜차이즈</strong>
+                                        <p>개설절차/투자비용 정보</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="quick_menu_item">
+                                <a href="#">
+                                    <div class="qm_img"><img src="assets/store.svg" alt=""></div>
+                                    <div class="qm_text">
+                                        <strong>지사안내</strong>
+                                        <p>수도권/지방 지사정보</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="quick_menu_item">
+                                <a href="#">
+                                    <div class="qm_img"><img src="assets/video.svg" alt=""></div>
+                                    <div class="qm_text">
+                                        <strong>광고영상</strong>
+                                        <p>TV광고/동영상</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="quick_menu_item">
+                                <a href="#">
+                                    <div class="qm_img"><img src="assets/about.svg" alt=""></div>
+                                    <div class="qm_text">
+                                        <strong>고객문의</strong>
+                                        <p>자주하는 질문/1:1문의</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
 
             </div>
         </main>
@@ -382,7 +502,19 @@
         <!-- 푸터 -->
         <footer class="footer">
             <div class="footer_wrap">
-                <p>© 2025 Subway Clone</p>
+                <div class="footer_links">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">썹 카드&썹 포인트 이용약관</a>
+                    <a href="#">점주관리자</a>
+                </div>
+                <div class="footer_bottom">
+                    <p>© 2025 Subway Clone</p>
+                    <div class="footer_img">
+                        <img src="assets/instar.svg" alt="">
+                        <img src="assets/facebook.svg" alt="">
+                    </div>
+                </div>
             </div>
         </footer>
 
@@ -393,6 +525,8 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script>
 
         /* 내비게이션 */
@@ -493,8 +627,23 @@
             menuList.style.transform =
                 `translateX(-${cardMove * currentPage}px)`;
         });
-
         updateCards('classic');
+
+        /* 캐러셀 */
+        $(document).ready(function () {
+            $('.banner_wrap').slick({
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+        $(document).ready(function () {
+            $('.notice_ad').slick({
+                arrows: false,
+                dots: true
+            });
+        });
 
 
     </script>

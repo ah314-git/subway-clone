@@ -1,11 +1,13 @@
 
-# ㅇ Subway 웹사이트 UI 구현
+# Subway 웹사이트 UI 구현
 
 
 ### 📈 프로젝트 소개
 > Subway 공식 웹사이트를 참고하여 제작한 클론 코딩 프로젝트입니다.
 HTML, CSS, JavaScript를 활용하여 퍼블리셔 관점에서 마크업의 구조를 설계하고
-사용자 경험을 위한 디테일한 UI 동작을 구현하는 데 집중하여 작업했습니다.
+사용자 경험을 위한 디테일한 UI 동작을 구현하는 데 집중하여 작업했습니다.  
+🔗 **Repository** : https://github.com/ah314-git/subway-clone  
+🔗 **Live Demo** : https://ah314-git.github.io/subway-clone/menu.html
 
 
 ### 📈사용 기술

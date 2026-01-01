@@ -1,0 +1,357 @@
+.hero_section {
+    position: relative;
+    height: 380px;
+    background-color: rgb(255, 100, 0);
+}
+.hero_section::after {
+    content: "";
+    position: absolute;
+    width: 1170px;
+    height: 600px;
+    bottom: -240px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("./assets/sandwich_bg.png") no-repeat center / contain;
+    z-index: 0;
+}
+
+.filter_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.filter_wrap.fixed {
+    position: fixed;
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.filter_var {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.filter_logo,
+.top_button {
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.filter_wrap.fixed .filter_logo,
+.filter_wrap.fixed .top_button {
+    opacity: 1;
+}
+
+.ft_logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.filter {
+    display: flex;
+    gap: 40px;
+}
+
+.filter li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.filter_wrap.fixed .filter li a {
+    color: #999;
+}
+
+.filter li.active a,
+.filter_wrap.fixed .filter li.active a {
+    color: #ffce32;
+    font-weight: 700;
+    padding-bottom: 16px;
+    border-bottom: 5px solid #ffce32 ;
+}
+
+
+.top_button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.hero {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+}
+
+.hero h2 {
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -2px;
+    margin-top: 120px;
+    animation: slideDown 0.5s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+.hero p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 24px;
+    line-height: 24px;
+    animation: slideDown 0.5s ease-out 0.7s forwards;
+    opacity: 0;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+.product_section {
+    display: flex;
+    height: auto;
+    background: #eee;
+}
+
+.product_section .product_menu {
+    display: flex;
+    width: 1170px;
+    height: auto;
+    margin: 96px auto;
+}
+
+
+.product_menu_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+.product_menu_item {
+    position: relative;
+    gap: 200px;
+    width: 370px;
+    height: 330px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    width: 72px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.label:nth-of-type(1) {
+    top: 0;
+}
+.label:nth-of-type(2) {
+    top: 34px;
+}
+
+.label span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.label.new {
+    background-color: #ffce32;
+}
+
+.label.subpick {
+    background-color: #009223;
+}
+
+.label.best {
+    background-color: #009223;
+}
+
+
+.menu_img {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 280px;
+    height: 200px;
+    background-color: #eee;
+}
+
+.menu_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product_menu_item {
+    transition: none;
+}
+
+.menu_text {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menu_text strong {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+}
+
+.menu_text p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 8px;
+}
+
+.menu_desc {
+    opacity: 0;
+    transform: translateY(20px);
+    color: rgb(200, 250, 200) !important;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.zoom_icon {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, -100px);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: url("./assets/zoom.svg") no-repeat center / contain;
+    opacity: 0;
+}
+
+.product_menu_item:hover {
+    background-color: #009223;
+}
+
+.product_menu_item:hover .menu_img,
+.product_menu_item:hover .label {
+    opacity: 0;
+}
+
+.product_menu_item:hover .menu_text {
+    transform: translateY(-160px);
+    transition: all 0.4s ease;
+}
+
+.product_menu_item:hover .menu_text strong,
+.product_menu_item:hover .menu_text p {
+    color: #fff;
+}
+
+.product_menu_item:hover .menu_desc {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.4s ease-out;
+    transition-delay: 0.2s;
+}
+
+.product_menu_item:hover .zoom_icon {
+    opacity: 1;
+    transform: translate(-50%, -20px);
+    width: 64px;
+    height: 64px;
+    transition: all 0.4s ease-out;
+    transition-delay: 0.2s;
+}
+
+
+
+
+.product_tabs_wrap {
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.product_tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 24px;
+    width: 1170px;
+    height: 80px;
+}
+
+.product_tabs li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.product_tabs li.active {
+    color: #009223;
+    font-weight: 600;
+}
+
+.product_tabs li::after {
+    content: '|';
+    position: absolute;
+    right: -12px;
+    color: #ccc;
+}
+
+.product_tabs li:last-child::after {
+    content: '';
+}

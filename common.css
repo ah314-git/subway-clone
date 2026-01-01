@@ -1,0 +1,152 @@
+/* 헤더 */
+.header_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background-color: #fff;
+    border-top: 5px solid #009223;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-top: 24px;
+}
+
+
+
+/* 내비게이션 */
+.nav {
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    z-index: 9999;
+}
+
+.nav_wrap,
+.subnav_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_wrap {
+    height: 70px;
+}
+
+.subnav_wrap {
+    height: 250px;
+    overflow: hidden;
+}
+
+.nav_list,
+.subnav_list {
+    display: flex;
+}
+
+.nav_list li,
+.subnav_list li {
+    width: 166px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.nav_list li a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.nav_list li a:hover {
+    color: #009223;
+}
+
+.subnav_list li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+}
+
+.subnav_list li a:hover {
+    color: #009223;
+    text-decoration: underline;
+}
+
+
+/* 푸터 */
+.footer {
+    position: relative;
+    background-color: #262626;
+}
+
+.footer_wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1170px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.footer_links a {
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+    margin: 24px 0px;
+    margin-right: 20px;
+}
+
+.footer_links a:nth-child(2) {
+    color: #ddd;
+    font-weight: 500;
+}
+
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.footer_bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background-color: #444;
+}
+
+.footer_wrap p {
+    color: #888;
+}
+
+.footer_img {
+    display: flex;
+    gap: 16px;
+}
+
+.footer_img img {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    margin-top: 20px;
+}
+
